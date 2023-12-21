@@ -26,6 +26,7 @@
 
 .countdown .remaining {
   grid-area: 1/1;
+  padding: 0 40px;
 }
 
 .countdown .dot-container {
@@ -68,6 +69,10 @@
 
   .countdown .number {
     font-size: 1.5rem;
+  }
+
+  .countdown .remaining {
+    padding: 0 25px;
   }
 
   .countdown .text {

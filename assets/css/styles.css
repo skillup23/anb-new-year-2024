@@ -183,6 +183,7 @@ main {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  /* margin-bottom: 10rem; */
 }
 
 .title {
@@ -378,6 +379,7 @@ main {
   .subtitle {
     font-size: 1.3vh;
     letter-spacing: 2px;
+    font-weight: bold;
   }
 
   .text {
