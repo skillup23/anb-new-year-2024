@@ -57,7 +57,7 @@ body {
       rgba(0, 0, 0, 0.1) 0%,
       var(--color-black) 100%
     ),
-    url(/assets/img/fon1.jpg);
+    url(../img/fon1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #0d0d0d;
@@ -70,7 +70,7 @@ body {
       rgba(0, 0, 0, 0.5) 0%,
       var(--color-black) 100%
     ),
-    url(/assets/img/fon2-2.jpg);
+    url(../img/fon2-2.jpg);
 }
 
 .body__date {
