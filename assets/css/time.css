@@ -5,9 +5,9 @@
 
 .countdown {
   --number-color: hsl(0 0% 100%);
-  --text-color: hsl(134, 44%, 45%);
+  --text-color: hsl(191, 44%, 45%);
   --dot-color: hsl(125, 18%, 72%);
-  --dot-color-remaining: hsl(125, 90%, 61%);
+  --dot-color-remaining: hsl(203, 100%, 49%);
   --dot-color-active: hsl(0, 0%, 1%);
   font-family: system-ui, sans-serif;
   display: grid;

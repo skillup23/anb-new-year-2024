@@ -54,10 +54,10 @@ body {
   height: 100%;
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.5) 0%,
       var(--color-black) 100%
     ),
-    url(../img/fon1.jpg);
+    url(../img/fon1-3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #0d0d0d;
@@ -79,7 +79,7 @@ body {
       rgba(0, 0, 0, 0) 0%,
       var(--color-black) 100%
     ),
-    radial-gradient(circle at 50% -50%, #335f4b 0%, var(--color-black) 100%);
+    radial-gradient(circle at 50% -50%, #0088ff 0%, var(--color-black) 100%);
 }
 
 h1 {
@@ -199,8 +199,11 @@ main {
   font-size: 14.5vh;
   letter-spacing: -15px;
   color: #fff;
-  text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 21px #fff, 0 0 42px #0fa,
-    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  /* text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa; */
+  text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 21px #fff,
+    0 0 42px rgb(0, 81, 255), 0 0 82px rgb(0, 81, 255), 0 0 92px rgb(0, 21, 255),
+    0 0 102px rgb(0, 81, 255), 0 0 151px rgb(0, 81, 255);
   animation: flicker 1.5s infinite alternate;
 }
 
@@ -213,8 +216,10 @@ main {
   53%,
   57%,
   100% {
-    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,
-      0 0 10px #0fa, 0 0 100px #0fa, 0 0 100px #0fa, 0 0 10px #0fa;
+    text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 21px #fff,
+      0 0 42px rgb(0, 81, 255), 0 0 82px rgb(0, 81, 255),
+      0 0 92px rgb(0, 21, 255), 0 0 102px rgb(0, 81, 255),
+      0 0 151px rgb(0, 81, 255);
   }
 
   20%,
@@ -237,7 +242,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   margin-top: 3%;
-  font-size: 2vh;
+  font-size: 2.7vh;
   letter-spacing: 1px;
 }
 
@@ -308,7 +313,7 @@ main {
   }
 
   .text {
-    font-size: 2vh;
+    font-size: 2.5vh;
   }
 
   .tab_title {
@@ -330,13 +335,13 @@ main {
   }
 
   .text {
-    font-size: 1.7vh;
+    font-size: 2vh;
   }
 }
 
 @media screen and (max-width: 550px) {
   body {
-    background-position: 60% 0%;
+    background-position: 50% 0%;
     /* background-size: 150%; */
   }
 
@@ -351,7 +356,7 @@ main {
   }
 
   .text {
-    font-size: 1.5vh;
+    font-size: 1.9vh;
     width: 90%;
   }
 }
@@ -374,6 +379,7 @@ main {
 
   .neonText {
     font-size: 12vh;
+    margin-left: -30px;
   }
 
   .subtitle {
@@ -383,7 +389,7 @@ main {
   }
 
   .text {
-    font-size: 1.5vh;
+    font-size: 1.9vh;
     width: 95%;
   }
 

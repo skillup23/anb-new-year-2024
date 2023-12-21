@@ -1,4 +1,5 @@
-$green: #58dd93;
+// $green: rgb(0, 81, 255);
+$green: rgb(0, 157, 255);
 
 :root {
   --size-default: 22px;
@@ -15,7 +16,7 @@ $green: #58dd93;
 
 @property --glowColor {
   syntax: '<color>';
-  initial-value: #58dd93;
+  initial-value: rgb(0, 81, 255);
 }
 
 @keyframes rotate {
@@ -98,13 +99,13 @@ $green: #58dd93;
     width: 150px;
     padding: var(--size-sm) var(--size-default);
     border-radius: 100px;
-    color: var(--color-green);
+    color: #fff;
     font-weight: 500;
     font-size: 2vh;
     text-transform: uppercase;
     z-index: 1;
     transition: all 0.18s ease;
-    background: rgba(#000, 0.3);
+    background: rgba(#000, 0.7);
     backdrop-filter: blur(40px);
     backface-visibility: hidden;
   }
