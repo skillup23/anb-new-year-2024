@@ -1,7 +1,7 @@
 :root {
   --size-default: 22px;
   --size-sm: 16px;
-  --color-green: rgb(0, 157, 255);
+  --color-green: rgb(0, 81, 255);
   --color-black: #000;
 }
 
@@ -95,8 +95,8 @@
   backface-visibility: hidden;
 }
 .btn:hover .btnInner {
-  background: rgba(0, 157, 255, 0.1);
-  color: #66c4ff;
+  background: rgba(0, 81, 255, 0.1);
+  color: #6697ff;
 }
 .btn:active {
   transform: scale(0.95);
