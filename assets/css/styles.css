@@ -1,0 +1,408 @@
+/*=============== FONTS ===============*/
+/* @import url(https://myfonts.ru/myfonts?fonts=chalk-cyrillic-freehand); */
+@font-face {
+  font-family: 'blackberry';
+  src: url(../fonts/blackberry-normal_version_02.otf);
+}
+
+@font-face {
+  font-family: 'AlayaRoza';
+  src: url(../fonts/AlayaRozaDemo.otf);
+}
+
+@font-face {
+  font-family: 'Antarctic';
+  src: url(../fonts/Antarctic.otf);
+}
+
+@font-face {
+  font-family: 'CocaCola';
+  src: url(../fonts/coca_colaregularrus_lat.otf);
+}
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: #bb2749;
+  --first-color-alt: #801b33;
+  --second-color: hsl(25, 83%, 53%);
+  --title-color: rgb(255, 255, 255);
+  --text-color: rgb(255, 255, 255);
+  --border-color: hsl(222, 13%, 80%);
+  --body-color: #000;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  color: var(--text-color);
+  /* background-image: url(/assets/img/fon1-1.jpg); */
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      var(--color-black) 100%
+    ),
+    url(/assets/img/fon1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #0d0d0d;
+  overflow: hidden;
+}
+
+.body__mesto {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5) 0%,
+      var(--color-black) 100%
+    ),
+    url(/assets/img/fon2-2.jpg);
+}
+
+.body__date {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      var(--color-black) 100%
+    ),
+    radial-gradient(circle at 50% -50%, #335f4b 0%, var(--color-black) 100%);
+}
+
+h1 {
+  font-family: 'blackberry', arial;
+  font-size: 180px;
+  font-style: normal;
+  font-weight: 200;
+}
+
+h2 {
+  font-family: 'CocaCola', arial;
+  font-style: normal;
+  font-weight: 200;
+}
+
+h3 {
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+}
+
+h4 {
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+}
+
+h5 {
+  font-family: 'Ubuntu', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  color: var(--first-color-alt);
+  font-weight: bold;
+}
+
+h6 {
+  font-family: 'Ubuntu', Arial, sans-serif;
+  font-size: 2vh;
+  font-style: normal;
+  font-weight: 200;
+  margin-top: 3vh;
+  text-align: center;
+}
+
+p {
+  font-family: 'Times New Roman', Times, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: 'Times New Roman', Times, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  font-family: var(--body-font);
+  outline: none;
+  border: none;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  max-width: 1024px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  width: 100vw;
+  height: 100vh;
+  align-content: flex-start;
+  justify-items: center;
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  gap: 2vh;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.title {
+  color: var(--title-color);
+  /* margin-top: 3%;
+  margin-bottom: 5%; */
+  font-size: 9.5vh;
+  text-align: center;
+  line-height: 9vh;
+}
+
+.neonText {
+  font-size: 14.5vh;
+  letter-spacing: -15px;
+  color: #fff;
+  text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  animation: flicker 1.5s infinite alternate;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,
+      0 0 10px #0fa, 0 0 100px #0fa, 0 0 100px #0fa, 0 0 10px #0fa;
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
+.subtitle {
+  letter-spacing: 4px;
+  text-align: center;
+  font-size: 2.2vh;
+}
+
+.text {
+  text-transform: uppercase;
+  text-align: center;
+  width: 530px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  font-size: 2vh;
+  letter-spacing: 1px;
+}
+
+.text-title {
+  font-size: 5vh;
+}
+
+/* ------------Анимация снежинок--------------- */
+.flake path {
+  fill: #fff;
+}
+
+.flake-wrapper {
+  position: absolute;
+  z-index: 999;
+}
+
+@keyframes falling {
+  0% {
+    top: -50px;
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+.flake {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes moveParticle {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(300px);
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Overlock');
+
+@media screen and (max-width: 1280px) {
+  body {
+    background-position: 0% 5%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-position: 0% 3%;
+  }
+
+  .title {
+    font-size: 10vh;
+  }
+
+  .subtitle {
+    font-size: 2vh;
+  }
+
+  .text {
+    font-size: 2vh;
+  }
+
+  .tab_title {
+    font-size: 1.7vh;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  body {
+    background-position: 0% 1%;
+  }
+
+  .title {
+    font-size: 8vh;
+  }
+
+  .subtitle {
+    font-size: 1.7vh;
+  }
+
+  .text {
+    font-size: 1.7vh;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    background-position: 60% 0%;
+    /* background-size: 150%; */
+  }
+
+  .title {
+    margin-top: 4vh;
+    font-size: 10vh;
+    line-height: 7vh;
+  }
+
+  .subtitle {
+    font-size: 1.3vh;
+  }
+
+  .text {
+    font-size: 1.5vh;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    height: 100%;
+  }
+
+  /* .data {
+    margin-top: 21vh;
+  } */
+
+  .title {
+    margin-bottom: 2vh;
+    font-size: 8vh;
+    line-height: 8vh;
+  }
+
+  .neonText {
+    font-size: 12vh;
+  }
+
+  .subtitle {
+    font-size: 1.3vh;
+    letter-spacing: 2px;
+  }
+
+  .text {
+    font-size: 1.5vh;
+    width: 95%;
+  }
+
+  .text-title {
+    font-size: 4vh;
+  }
+}
+
+/* @media screen and (max-width: 356px) {
+  body {
+    background-size: 250%;
+  }
+
+  .subtitle {
+    font-size: 1vh;
+  }
+
+  .buttons a {
+    font-size: 1.2vh;
+  }
+
+  .plan_title {
+    font-size: 7vh;
+  }
+} */

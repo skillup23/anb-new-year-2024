@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Chalk cyrillic freehand';
+	src: url('../fonts/chalk_cyrillic_freehand.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/chalk_cyrillic_freehand.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/chalk_cyrillic_freehand.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/chalk_cyrillic_freehand.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/chalk_cyrillic_freehand.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/chalk_cyrillic_freehand.svg#chalk_cyrillic_freehand') format('svg'); /* Chrome < 4, Legacy iOS */
+}

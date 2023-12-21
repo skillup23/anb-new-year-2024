@@ -1,0 +1,75 @@
+.time__container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.countdown {
+  --number-color: hsl(0 0% 100%);
+  --text-color: hsl(134, 44%, 45%);
+  --dot-color: hsl(125, 18%, 72%);
+  --dot-color-remaining: hsl(125, 90%, 61%);
+  --dot-color-active: hsl(0, 0%, 1%);
+  font-family: system-ui, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: min(60rem, 100%);
+  margin-inline: auto;
+  container: inline-size;
+}
+
+.countdown .part {
+  aspect-ratio: 1/1;
+  display: grid;
+  place-items: center;
+}
+
+.countdown .remaining {
+  grid-area: 1/1;
+}
+
+.countdown .dot-container {
+  grid-area: 1/1;
+  height: 100%;
+  width: 4%;
+  rotate: calc(360deg / var(--dots) * var(--dot-idx));
+}
+
+.countdown .number {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.countdown .text {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 0 40px;
+}
+
+.countdown .dot {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: var(--dot-color);
+  border-radius: 50%;
+  transition: background-color 0.25s;
+  &[data-active='true'] {
+    background-color: var(--dot-color-remaining);
+    &[data-lastactive='true'] {
+      background-color: var(--dot-color-active);
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .countdown {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .title {
+    font-size: 6vh;
+    line-height: 6vh;
+  }
+}
