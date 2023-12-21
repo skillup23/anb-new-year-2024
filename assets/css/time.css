@@ -44,7 +44,7 @@
 .countdown .text {
   text-transform: uppercase;
   font-size: 1rem;
-  margin: 0 40px;
+  /* margin: 0 40px; */
 }
 
 .countdown .dot {
@@ -73,6 +73,10 @@
   .countdown .text {
     font-size: 0.8rem;
     margin: 0 30px;
+  }
+
+  .countdown .part {
+    width: 120px;
   }
 }
 
