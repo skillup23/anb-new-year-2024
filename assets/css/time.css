@@ -65,11 +65,25 @@
   .countdown {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .countdown .number {
+    font-size: 1.5rem;
+  }
+
+  .countdown .text {
+    font-size: 0.8rem;
+    margin: 0 30px;
+  }
 }
 
 @media screen and (max-width: 550px) {
   .title {
     font-size: 6vh;
     line-height: 6vh;
+  }
+
+  .time__container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
