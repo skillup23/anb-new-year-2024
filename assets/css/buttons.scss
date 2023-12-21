@@ -46,7 +46,6 @@ $green: rgb(0, 157, 255);
   height: 100%;
   align-items: center;
   justify-content: center;
-  padding: 16px;
 }
 
 .btn {
@@ -58,6 +57,7 @@ $green: rgb(0, 157, 255);
   background: none;
   position: relative;
   padding: 1px;
+  margin: 16px;
   text-decoration: none;
   transition: all 0.18s ease-in-out;
   transform: translate3d(0, 0, 0);
