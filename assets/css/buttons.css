@@ -72,7 +72,7 @@
 }
 .btn:before {
   animation: rotate 2s infinite linear;
-  filter: blur(20px);
+  filter: blur(5px);
 }
 .btn .btnInner {
   position: relative;

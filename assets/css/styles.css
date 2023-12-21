@@ -1,22 +1,22 @@
 /*=============== FONTS ===============*/
 /* @import url(https://myfonts.ru/myfonts?fonts=chalk-cyrillic-freehand); */
 @font-face {
-  font-family: 'blackberry';
+  font-family: "blackberry";
   src: url(../fonts/blackberry-normal_version_02.otf);
 }
 
 @font-face {
-  font-family: 'AlayaRoza';
+  font-family: "AlayaRoza";
   src: url(../fonts/AlayaRozaDemo.otf);
 }
 
 @font-face {
-  font-family: 'Antarctic';
+  font-family: "Antarctic";
   src: url(../fonts/Antarctic.otf);
 }
 
 @font-face {
-  font-family: 'CocaCola';
+  font-family: "CocaCola";
   src: url(../fonts/coca_colaregularrus_lat.otf);
 }
 
@@ -83,14 +83,14 @@ body {
 }
 
 h1 {
-  font-family: 'blackberry', arial;
+  font-family: "blackberry", arial;
   font-size: 180px;
   font-style: normal;
   font-weight: 200;
 }
 
 h2 {
-  font-family: 'CocaCola', arial;
+  font-family: "CocaCola", arial;
   font-style: normal;
   font-weight: 200;
 }
@@ -108,7 +108,7 @@ h4 {
 }
 
 h5 {
-  font-family: 'Ubuntu', Arial, sans-serif;
+  font-family: "Ubuntu", Arial, sans-serif;
   font-style: normal;
   font-weight: 200;
   color: var(--first-color-alt);
@@ -116,7 +116,7 @@ h5 {
 }
 
 h6 {
-  font-family: 'Ubuntu', Arial, sans-serif;
+  font-family: "Ubuntu", Arial, sans-serif;
   font-size: 2vh;
   font-style: normal;
   font-weight: 200;
@@ -125,7 +125,7 @@ h6 {
 }
 
 p {
-  font-family: 'Times New Roman', Times, sans-serif;
+  font-family: "Times New Roman", Times, sans-serif;
   font-style: normal;
   font-weight: 200;
 }
@@ -137,7 +137,7 @@ ul {
 a {
   text-decoration: none;
   color: var(--text-color);
-  font-family: 'Times New Roman', Times, sans-serif;
+  font-family: "Times New Roman", Times, sans-serif;
 }
 
 img {
@@ -291,7 +291,7 @@ main {
   }
 }
 
-@import url('https://fonts.googleapis.com/css?family=Overlock');
+@import url("https://fonts.googleapis.com/css?family=Overlock");
 
 @media screen and (max-width: 1280px) {
   body {
@@ -379,7 +379,6 @@ main {
 
   .neonText {
     font-size: 12vh;
-    margin-left: -30px;
   }
 
   .subtitle {
